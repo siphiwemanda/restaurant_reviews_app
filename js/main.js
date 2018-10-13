@@ -7,8 +7,11 @@ var markers = []
 if('serviceWorker' in navigator){
   navigator.serviceWorker
   .register('js/sw.js')
-  .catch(function(err){
-    //console.error(err);
+  .then(function(){
+    console.log('registration worked, in mainjs');
+  })
+  .catch(function(){
+    console.log('registration failed')
   });
 }
 
