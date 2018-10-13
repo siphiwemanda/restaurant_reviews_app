@@ -14,7 +14,7 @@ const CFiles = [
   '/restaurant.html',
   '/css/styles.css',
   '/js/dbhelper.js',
-  '/js/main',
+  '/js/main.js',
   '/js/restaurant_info.js',
   '/data/restaurants.json',
   '/img/1.jpg',
@@ -28,3 +28,12 @@ const CFiles = [
   '/img/9.jpg',
   '/img/10.jpg',
 ];
+
+self.addListener('fetch', function(e){
+    e.respondWith(
+      caches.match(e.request)
+      .then(function(response){
+        return response || fetch(e.request)
+      });
+    );
+  });
