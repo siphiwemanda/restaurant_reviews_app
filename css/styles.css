@@ -137,7 +137,8 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-evenly;
   text-align: center;
 }
 #restaurants-list li {
