@@ -303,16 +303,22 @@ nav h1 a {
 
 
 /*====================media quries ===================*/
-@media(min-width: 900px){
+/*@media screen and (min-width: 900px){
 	.inside #map-container{
 		position: top;
  		height: 100%;
 	}
 }
+*/
 
-
-@media(min-width:900px){
+@media screen and (min-width:900px){
 	.inside #restaurant-name {
 		color: blue;
+	}
+}
+
+@media screen and (min-width: 400px){
+	body{
+		background-color: yellow;
 	}
 }
