@@ -8,9 +8,9 @@ Download as .zip file or [clone this project](https://github.com/siphiwemanda/re
 
 In the home folder, start up a simple HTTP server
 
-1.In a terminal, check the version of Python you have: python -V.
-2.Python 2.x, use -m SimpleHTTPServer 8000
-3.Python 3.x, use python3 -m http.server 8000.
+* In a terminal, check the version of Python you have: python -V.
+* Python 2.x, use -m SimpleHTTPServer 8000
+* Python 3.x, use python3 -m http.server 8000.
 
 (If you don't have Python installed, navigate to Python's website to download and install the software.)
 
