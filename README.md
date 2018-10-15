@@ -4,10 +4,9 @@ In this project, I had to add a service worker,accessibility features and respon
 
 # Run the Application
 How to run this project
-Download as .zip file or clone this project:
+Download as .zip file or [clone this project](https://github.com/siphiwemanda/restaurant_reviews_app.git)
 
-$git clone https://github.com/siphiwemanda/restaurant_reviews_app.git
-In this folder, start up a simple HTTP server
+In the home folder, start up a simple HTTP server
 
 1.In a terminal, check the version of Python you have: python -V.
 2.Python 2.x, use -m SimpleHTTPServer 8000
@@ -18,5 +17,5 @@ In this folder, start up a simple HTTP server
 With your server running, visit the site: http://localhost:8000.
 
 
-# Code  dependencies and research
+# Code Dependencies and Research
 [Starter Code](https://github.com/udacity/mws-restaurant-stage-1)
