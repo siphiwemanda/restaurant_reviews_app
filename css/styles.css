@@ -206,15 +206,12 @@ nav h1 a {
 }
 /* ====================== main content ====================== */
 
-.inside #maincontent {
-
-}
 /* ====================== main content (map) ====================== */
 .inside #map-container {
-	right: 0;
 	position: relative;
 	width: 100%;
 	height: 400px;
+	top:130px;
 }
 .inside #map {
   background-color: #ccc;
@@ -229,7 +226,7 @@ nav h1 a {
   width: 50%;
 }
 #restaurant-name {
-  color: pink;
+  color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -301,34 +298,49 @@ nav h1 a {
 
 
 /*====================media quries ===================*/
-@media screen and (min-width: 950px){
+@media screen and (min-width: 881px){
     .inside #map-container {
   	background: blue none repeat scroll 0 0;
-  	/*height: 100%;*/
-		overflow-y: scroll;
+  	height: 100%;
+		/*overflow-y: scroll;*/
   	position: fixed;
-  	top: 0;
+  	left: 50%;
 		width: 50%;
+
   }
 
 }
 
-@media screen and (max-width:950px){
-#restaurant-container{
+/*@media screen and (min-width:100px){
+	.inside #map{
+		top:130px;
+		position: relative;
+	}
+}
+*/
+
+
+
+@media screen and (max-width:881px){
+
+	#restaurant-container{
 
 	width: fit-content;
 }
-#restaurant-img {
+	#restaurant-img {
 	width: 100%;
 }
-#restaurant-cuisine {
+	#restaurant-cuisine {
 	width: 100%;
 
 }
-#reviews-container {
+	#reviews-container {
     width: fit-content;
 }
 .inside #footer {
     width: fit-content;
+}
+#breadcrumb {
+	width: fit-content;
 }
 }
