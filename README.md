@@ -2,11 +2,11 @@
 Part of the Udacity Front End Web Developer Nanodegreee
 In this project, I had to add a service worker,accessibility features and responsive design.
 
-#Run the Application
+# Run the Application
 How to run this project
 Download as .zip file or clone this project:
 
-$ git clone https://github.com/siphiwemanda/restaurant_reviews_app.git
+$git clone https://github.com/siphiwemanda/restaurant_reviews_app.git
 In this folder, start up a simple HTTP server
 
 1.In a terminal, check the version of Python you have: python -V.
@@ -18,5 +18,5 @@ In this folder, start up a simple HTTP server
 With your server running, visit the site: http://localhost:8000.
 
 
-#Code  dependencies and research
-https://github.com/udacity/mws-restaurant-stage-1
+# Code  dependencies and research
+[Starter Code](https://github.com/udacity/mws-restaurant-stage-1)
