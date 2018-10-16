@@ -11,6 +11,7 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
 	position:relative;
+	overflow-x: hidden;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +40,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
 	width: fit-content;
+	overflow-x: hidden;
 }
 #footer {
   background-color: #444;
@@ -141,6 +143,7 @@ nav h1 a {
 	flex-wrap: wrap;
 	align-content: space-evenly;
   text-align: center;
+	justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -302,10 +305,12 @@ nav h1 a {
     .inside #map-container {
   	background: blue none repeat scroll 0 0;
   	height: 100%;
+		overflow-x: hidden;
 		/*overflow-y: scroll;*/
   	position: fixed;
   	left: 50%;
 		width: 50%;
+		top:0px;
 		}
 }
 
@@ -323,7 +328,8 @@ nav h1 a {
     width: fit-content;
 	}
 .inside #footer {
-    width: fit-content;
+    width: 100%;
+		text-align: center;
 	}
 #breadcrumb {
 	width: fit-content;
