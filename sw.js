@@ -1,4 +1,4 @@
-console.log('serviceWorker: Registered');
+console.log('serviceWorker Registered');
 let StaticNames = 'static_v1'
 
 self.addEventListener('install', function(e){
@@ -22,23 +22,19 @@ self.addEventListener('install', function(e){
           '/img/7.jpg',
           '/img/8.jpg',
           '/img/9.jpg',
-          '/img/10.jpg',
+          '/img/10.jpg'
         ]);
       })
     );
 });
 
 self.addEventListener('activate', function(e){
-  e.waitUntil(
-    caches.keys().then(function(cacheNames){
-      return Promise.all(
-      cacheNames.filter(function (cacheNames) {
+  e.waitUntil(caches.keys().then(function(cacheNames){
+      return Promise.all(cacheNames.filter(function (cacheNames) {
         return cacheNames.startsWith('static_')&&
-        cacheNames!=StaticNames;
-
-      }).map(function(cacheNames){
+        cacheNames!=StaticNames;}).map(function(cacheNames){
         return caches.delete(cacheNames);
-      })
+        })
       );
     })
   );
@@ -47,10 +43,9 @@ self.addEventListener('activate', function(e){
 
 
 self.addEventListener('fetch', function(e){
-    e.respondWith(
-      caches.match(e.request).then(function(response){
+    e.respondWith(caches.match(e.request).then(function(response){
         if(response) return response;
         return fetch(e.request)
-        })
-      );
+      })
+    );
 });
